@@ -6,4 +6,5 @@ Node.js is kell nekünk, ha elszeretnénk kezdeni frontend-el foglalkozni. Ez a 
 > node -v és npm -v
 
 ## Visual Studio Code / VSCodium
-Mindkettő ugyanaz a felület, csak a kiadás, ami különbözik. Visual Studio Code ([VSCode](https://code.visualstudio.com/)) zárt forráskódú, miközben [VSCodium](https://vscodium.com/) nyílt. Amint feltelepült, én a vscode-icons extension-t javaslom feltelepíteni.
+Mindkettő ugyanaz a felület, csak a kiadás, ami különbözik. Visual Studio Code ([VSCode](https://code.visualstudio.com/)) zárt forráskódú, miközben [VSCodium](https://vscodium.com/) nyílt. Amint feltelepült, én ezt a extension-t javaslom feltelepíteni.
+> vscode-icons

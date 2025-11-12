@@ -9,9 +9,9 @@
 
 /* ==== THEME VARIABLES ==== */
 :root {
-  --bg: #3b3c36;         /* háttérszín — kérésed szerint */
-  --surface: #4a4b45;    /* kicsit világosabb felületekhez */
-  --text: #f1f5f9;       /* világos szöveg */
+  --bg: #3b3c36;         /* fallback háttér, ha a kép nem tölt be */
+  --surface: rgba(0,0,0,0.6); /* áttetsző overlay felületekhez */
+  --text: #f1f5f9;
   --muted: #cbd5e1;
   --primary: #2563eb;    /* kék navbar */
   --radius: 10px;
@@ -21,9 +21,19 @@
 /* ==== GLOBAL LAYOUT ==== */
 html, body, app-root {
   height: 100%;
-  background: var(--bg);
+  background: var(--bg) url("assets/Linux_wallpaper.png") no-repeat center center fixed;
+  background-size: cover; /* hogy kitöltse a képernyőt */
   color: var(--text);
   font-family: var(--font-sans);
+}
+
+/* opcionális sötét overlay, hogy a szöveg jobban olvasható legyen */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
 }
 
 /* ==== NAVBAR ==== */
@@ -66,6 +76,8 @@ html, body, app-root {
 
 /* ==== MAIN AREA ==== */
 .main {
+  position: relative;
+  z-index: 1;
   margin-top: 80px; /* hely a fix navbar alatt */
   padding: 48px 32px;
   min-height: calc(100vh - 80px);

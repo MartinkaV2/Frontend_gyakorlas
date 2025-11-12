@@ -3,10 +3,13 @@ import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet,],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('Martin-Linux');
+    noop(): void {
+    // placeholder: később itt navigálhatsz vagy megnyithatsz egy modalt
+    console.log('noop clicked');
+  }
 }

@@ -8,11 +8,12 @@ import { Component } from '@angular/core';
       <p>Itt jelennek majd meg a különböző Linux disztribúciók.</p>
     </div>
   `,
-  styles: [`
-    .main {
-      padding: 20px;
-      text-align: center;
-    }
-  `]
+styles: [`
+  .main {
+    padding: 40px 20px;
+    text-align: center;
+    flex: 1;
+  }
+`]
 })
 export class Disztribuciok {}

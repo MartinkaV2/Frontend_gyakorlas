@@ -1,11 +1,17 @@
-<header class="navbar">
-  <h1>Linux projekt</h1>
+<div class="app-container">
+  <header class="navbar">
+    <h1>Linux projekt</h1>
 
-  <nav>
-    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Kezdőlap</a>
-    <a routerLink="/disztribuciok" routerLinkActive="active">Disztribúciók</a>
-    <a routerLink="/kapcsolat" routerLinkActive="active">Kapcsolat</a>
-  </nav>
-</header>
+    <nav>
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Kezdőlap</a>
+      <a routerLink="/disztribuciok" routerLinkActive="active">Disztribúciók</a>
+      <a routerLink="/kapcsolat" routerLinkActive="active">Kapcsolat</a>
+    </nav>
+  </header>
 
-<router-outlet></router-outlet>
+  <main class="main-content">
+    <router-outlet></router-outlet>
+  </main>
+
+  <app-footer></app-footer>
+</div>

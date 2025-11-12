@@ -1,11 +1,12 @@
 .kapcsolat-container {
   max-width: 500px;
-  margin: 60px auto;
+  margin: 40px auto;
   padding: 20px;
   background-color: rgba(40, 40, 40, 0.8);
   border-radius: 10px;
   box-shadow: 0 0 10px #000;
   color: #fff;
+  flex: 1;
 }
 
 .kapcsolat-container h2 {

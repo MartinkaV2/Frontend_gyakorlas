@@ -4,8 +4,13 @@ import { Kapcsolat } from './pages/kapcsolat/kapcsolat';
 export const routes: Routes = [
   {
     path: '',
-    loadComponent: () => import('./app').then(m => m.App),
+    loadComponent: () => import('./pages/kezdolap/kezdolap').then(m => m.Kezdolap),
     title: 'Kezdőlap'
+  },
+  {
+    path: 'disztribuciok',
+    loadComponent: () => import('./pages/disztribuciok/disztribuciok').then(m => m.Disztribuciok),
+    title: 'Disztribúciók'
   },
   {
     path: 'kapcsolat',

@@ -115,16 +115,17 @@ export class App {
       console.log('Starting GraphQL API call...');
       
       // Használjunk egy publikus, működő GraphQL API-t
-      const query = `
-          {
-          users {
-            data {
-            id
-            name
-          }
-        }
+const query = `
+  {
+    users {
+      data{
+            id 
+      name
+      }
     }
-      `;
+  }
+`;
+
 
       // Public GraphQL API that supports CORS
       const response = await axios.post('https://graphql-demo.mead.io/', { 
@@ -135,7 +136,7 @@ export class App {
         }
       });
       
-      console.log('GraphQL API response:', response.data);
+      console.log('GraphQL API response:', response.data.data.users.data);
       
       if (response.data.errors) {
         throw new Error(response.data.errors[0].message);

@@ -116,14 +116,14 @@ export class App {
       
       // Használjunk egy publikus, működő GraphQL API-t
       const query = `
-        query GetUsers {
+          {
           users {
+            data {
             id
             name
-            email
-            phone
           }
         }
+    }
       `;
 
       // Public GraphQL API that supports CORS

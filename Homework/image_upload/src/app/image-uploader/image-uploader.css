@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  background-color: var(--bg-primary);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  margin: 20px auto;
+  border: 1px solid var(--border-color);
+}
+
+.header {
+  background: linear-gradient(90deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+  color: var(--text-primary);
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.header p {
+  opacity: 0.9;
+}
+
+.content {
+  padding: 30px;
+  background-color: var(--bg-primary);
+}
+
+.upload-area {
+  border: 2px dashed var(--accent-primary);
+  border-radius: 8px;
+  padding: 30px 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  background-color: var(--bg-secondary);
+  cursor: pointer;
+}
+
+.upload-area:hover {
+  border-color: var(--accent-secondary);
+  background-color: var(--bg-tertiary);
+}
+
+.upload-area.highlight {
+  border-color: var(--accent-secondary);
+  background-color: #3a3a3a;
+}
+
+.upload-icon {
+  font-size: 48px;
+  color: var(--accent-primary);
+  margin-bottom: 10px;
+}
+
+.upload-text {
+  margin-bottom: 8px;
+  color: var(--text-secondary);
+  font-size: 16px;
+}
+
+.upload-info {
+  margin-bottom: 15px;
+  color: var(--accent-primary);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.btn {
+  background: linear-gradient(90deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+  color: var(--text-primary);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(79, 172, 254, 0.3);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(79, 172, 254, 0.4);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.file-input {
+  display: none;
+}
+
+/* Kép számláló */
+.image-counter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  background-color: var(--bg-secondary);
+  border-radius: 8px;
+  border-left: 4px solid var(--accent-primary);
+}
+
+.counter-text {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.remaining-slots {
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.btn-clear {
+  background-color: rgba(255, 0, 0, 0.2);
+  color: #ff6b6b;
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-clear:hover {
+  background-color: rgba(255, 0, 0, 0.3);
+  color: #ff5252;
+}
+
+.image-preview {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.image-preview h3 {
+  margin-bottom: 15px;
+  color: var(--text-primary);
+  text-align: left;
+}
+
+.preview-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+  justify-content: center;
+}
+
+.preview-item {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-secondary);
+}
+
+.preview-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.remove-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: rgba(255, 0, 0, 0.7);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.remove-btn:hover {
+  background-color: rgba(255, 0, 0, 0.9);
+}
+
+.image-number {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+/* Üres helyek stílusa */
+.empty-slot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-tertiary);
+  border: 2px dashed var(--border-color);
+}
+
+.empty-slot-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text-secondary);
+}
+
+.empty-icon {
+  font-size: 24px;
+  margin-bottom: 5px;
+  color: var(--accent-primary);
+}
+
+.empty-text {
+  font-size: 12px;
+}
+
+.info-text {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  .content {
+    padding: 20px;
+  }
+  
+  .preview-container {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+  
+  .preview-item {
+    height: 120px;
+  }
+  
+  .image-counter {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+}

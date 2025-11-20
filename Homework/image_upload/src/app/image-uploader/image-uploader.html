@@ -1,0 +1,64 @@
+<div class="container">
+  <div class="header">
+    <h1>Martin képfeltöltő oldala</h1>
+    <p>Tölts fel és tekints meg akár {{maxImages}} képet egyszerre</p>
+  </div>
+  
+  <div class="content">
+    <div 
+      class="upload-area" 
+      [class.highlight]="isDragOver"
+      (dragover)="onDragOver($event)"
+      (dragleave)="onDragLeave($event)"
+      (drop)="onDrop($event)"
+    >
+      <div class="upload-icon">📁</div>
+      <p class="upload-text">Húzd ide a képeidet, vagy kattints a gombra</p>
+      <p class="upload-info">Maximum {{maxImages}} képet tölthetsz fel</p>
+      <button class="btn" (click)="triggerFileInput()">Képek kiválasztása</button>
+      <input 
+        type="file" 
+        id="fileInput" 
+        class="file-input" 
+        accept="image/*" 
+        multiple
+        (change)="onFileSelected($event)"
+      >
+    </div>
+
+    <!-- Kép számláló -->
+    <div class="image-counter" *ngIf="uploadedImages.length > 0">
+      <span class="counter-text">
+        {{uploadedCount}}/{{maxImages}} kép feltöltve
+        <span class="remaining-slots">({{remainingSlots}} hely maradt)</span>
+      </span>
+      <button class="btn-clear" (click)="removeAllImages()">Összes törlése</button>
+    </div>
+    
+    <div class="image-preview">
+      <h3>Feltöltött képek</h3>
+      <div class="preview-container">
+        <div 
+          class="preview-item" 
+          *ngFor="let image of uploadedImages; let i = index"
+        >
+          <img [src]="image" [alt]="'Feltöltött kép ' + (i + 1)">
+          <button class="remove-btn" (click)="removeImage(i)">×</button>
+          <span class="image-number">{{i + 1}}</span>
+        </div>
+        
+        <!-- Üres helyek jelzése -->
+        <div 
+          class="preview-item empty-slot" 
+          *ngFor="let empty of [].constructor(remainingSlots)"
+        >
+          <div class="empty-slot-content">
+            <span class="empty-icon">+</span>
+            <span class="empty-text">Üres hely</span>
+          </div>
+        </div>
+      </div>
+      <p class="info-text" *ngIf="uploadedImages.length === 0">Még nincsenek feltöltött képek. Húzz ide képeket vagy kattints a "Képek kiválasztása" gombra.</p>
+    </div>
+  </div>
+</div>

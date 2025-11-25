@@ -1,4 +1,3 @@
-<!-- src/app/image-uploader/image-uploader.html -->
 <div class="uploader">
   <h3>Kép feltöltése</h3>
 
@@ -11,32 +10,65 @@
     <button class="btn" (click)="uploadImage()" [disabled]="!selectedFile || uploading">
       {{ uploading ? 'Feltöltés...' : 'Feltöltés' }}
     </button>
-    <button class="btn secondary" (click)="onShare()" [disabled]="!uploadedImageUrl || sharing || uploading">
-      Megosztás
+    <button class="btn secondary" (click)="onShare()" [disabled]="!uploadedImageUrl || uploading">
+      {{ sharing ? 'Megosztás...' : 'Megosztás' }}
     </button>
   </div>
 
-  <div class="preview" *ngIf="selectedPreview">
-    <p>Előnézet:</p>
-    <img [src]="selectedPreview" alt="preview" />
+  <!-- Előnézet -->
+  <div class="preview" *ngIf="selectedPreview && !uploadedImageUrl">
+    <p>Kiválasztott kép előnézete:</p>
+    <img [src]="selectedPreview" alt="Előnézet" />
   </div>
 
+  <!-- Feltöltött kép -->
   <div class="uploaded" *ngIf="uploadedImageUrl">
-    <p>Feltöltve — előnézet az imgbb-ről:</p>
-    <img [src]="uploadedImageUrl" alt="uploaded" />
+    <p>Sikeresen feltöltve!</p>
+    <img [src]="uploadedImageUrl" alt="Feltöltött kép" />
+    
+    <!-- Közvetlen kép link -->
+    <div class="link-section">
+      <p class="link-title">📷 Közvetlen kép link:</p>
+      <div class="link-row">
+        <input class="share-input" [value]="uploadedImageUrl" readonly #imageInput />
+        <button class="copy-btn" (click)="copyLink(imageInput.value)">{{copyButtonText}}</button>
+      </div>
+    </div>
+
+    <!-- Kép oldal link -->
+    <div class="link-section" *ngIf="uploadedImagePageUrl">
+      <p class="link-title">🌐 Kép megtekintése imgBB-n:</p>
+      <div class="link-row">
+        <input class="share-input" [value]="uploadedImagePageUrl" readonly #pageInput />
+        <button class="copy-btn secondary" (click)="copyPageLink(pageInput.value)">{{copyPageButtonText}}</button>
+      </div>
+      <button class="open-btn" (click)="openImagePage()">
+        🔗 Megnyitás új lapon
+      </button>
+    </div>
+
+    <!-- Hibás API válasz esetén -->
+    <div class="link-section" *ngIf="!uploadedImagePageUrl && uploadedImageUrl">
+      <p class="link-title">⚠️ Csak közvetlen kép link érhető el:</p>
+      <div class="link-row">
+        <input class="share-input" [value]="uploadedImageUrl" readonly #fallbackInput />
+        <button class="copy-btn" (click)="copyLink(fallbackInput.value)">{{copyButtonText}}</button>
+      </div>
+    </div>
   </div>
 
-  <!-- animált kis panel: látszik, ha sharingDelayPanel true -->
+  <!-- Megosztási panel -->
   <div class="share-panel" *ngIf="sharePanelVisible">
     <div class="panel-inner">
-      <p>Másold ki a linket, hogy megoszd:</p>
+      <p>📋 Másold ki a linket, hogy megoszd:</p>
       <div class="link-row">
         <input class="share-input" [value]="uploadedImageUrl" readonly #shareInput />
         <button class="copy-btn" (click)="copyLink(shareInput.value)">{{copyButtonText}}</button>
       </div>
-      <p class="hint">A linket megnyitva a megosztott képet látják.</p>
+      <p class="hint">A linket megnyitva bárki láthatja a feltöltött képet</p>
     </div>
   </div>
 
+  <!-- Értesítés -->
   <div class="toast" *ngIf="toastMessage">{{ toastMessage }}</div>
 </div>

@@ -213,6 +213,12 @@ export class ImageUploaderComponent {
     }
   }
 
+  openDirectImage() {
+    if (this.uploadedImageUrl) {
+      window.open(this.uploadedImageUrl, '_blank');
+    }
+  }
+
   showToast(msg: string) {
     this.toastMessage = msg;
     setTimeout(() => (this.toastMessage = null), 3000);

@@ -34,7 +34,7 @@ A Vue Router segít az oldalak közötti navigációban, míg a Pinia egyszerű 
 
 ## Könyvár szerkezete
 Ez a projekt könyvár szerkezete:
-
+```
 bdie-finder-clone/
 │
 ├── public/
@@ -63,3 +63,4 @@ bdie-finder-clone/
 │
 ├── package.json
 └── README.md
+```

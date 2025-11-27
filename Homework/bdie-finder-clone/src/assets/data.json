@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "title": "BDIE 101 - Basic Debug Information Entry",
+    "description": "A debug információk alap egységének leírása."
+  },
+  {
+    "id": 2,
+    "title": "BDIE 202 - Advanced Attributes",
+    "description": "Bonyolultabb DIE attribútumok bemutatása."
+  },
+  {
+    "id": 3,
+    "title": "DWARF Format",
+    "description": "A DWARF debugger formátum áttekintése."
+  }
+]

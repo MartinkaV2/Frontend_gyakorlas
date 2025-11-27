@@ -1,7 +1,6 @@
 # BDIE Finder – Mini Vue Klón
 
-This project is a simplified clone in Vue of
-https://benzhaomin.github.io/bdiefinder/ oldalnak.
+Ez a projekt próbálkozás szerűen https://benzhaomin.github.io/bdiefinder/-t akarta klónozni.
 
 A cél egy kis, oktatási célú alkalmazás készítése, amely bemutatja a Vue alapjait: komponensek, props, eseménykezelés, API-lekérés, routing és state kezelés.
 
@@ -12,3 +11,11 @@ A projekt létrehozásához a következő parancsot használtam:
 npm create vue@latest bdie-finder-clone
 ```
 Csak enter-t nyomtam utána, amikor csomagokat kérdezte.
+Második választásnál pedig a Oxlint-t választottam.
+
+## Könyvtárba lépés
+Projektünk build-elése után ezzel a paranccsal lehet belépni
+```bash
+cd .\bdie-finder-clone\
+```
+

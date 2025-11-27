@@ -33,8 +33,9 @@ Miért is kell nekünk ez?
 A Vue Router segít az oldalak közötti navigációban, míg a Pinia egyszerű és hatékony állapotkezelést biztosít.
 
 ## Könyvár szerkezete
-Ez a projekt könyvár szerkezete
-> bdie-finder-clone/
+Ez a projekt könyvár szerkezete:
+
+bdie-finder-clone/
 │
 ├── public/
 │   └── favicon.ico

@@ -1,5 +1,5 @@
 # Angular Counter Demo
-Ez egy olyan Angular projekt, amely Vue Mixin alapja.
+Ez egy olyan Angular projekt, amely Vue Mixin az alapja.
 Más csomagokat igényel, lentebb lesz részletezve
 
 ## 🔍 Kulcsfontosságú különbségek: Vue Mixin vs Angular Service

@@ -2,7 +2,6 @@
 Ez egy olyan Angular projekt, amely Vue Mixin alapja.
 Más csomagokat igényel, lentebb lesz részletezve
 
-## Vue Mixin és Angular Service közti különbség
 ## 🔍 Kulcsfontosságú különbségek: Vue Mixin vs Angular Service
 
 | Vue Mixin                          | Angular Service                               |
@@ -13,3 +12,36 @@ Más csomagokat igényel, lentebb lesz részletezve
 | `methods`                         | Service metódusok                              |
 | `mounted` / `unmounted`           | `ngOnInit` / `ngOnDestroy`                     |
 | Template: `{{ count }}`           | Template: `{{ count$ | async }}`               |
+
+## 📁 Projekt könyvtárszerkezet – vue-mixin-angular
+```
+vue-mixin-angular/ 
+├── .angular/ # Angular build és konfigurációs fájlok
+ ├── .vscode/ # VS Code beállítások 
+ ├── node_modules/ # Függőségek 
+ ├── public/ # Publikus fájlok (pl. favicon, index.html) 
+ ├── src/ # Forráskód 
+ │ ├── component/ # Vue komponensek 
+ │ │ ├── counter/ # Számláló logika 
+ │ │ └── counter-display/ # Megjelenítő komponens 
+ │ ├── services/ # Angular szolgáltatások 
+ │ │ ├── counter.service.ts 
+ │ │ ├── app.config.server.ts 
+ │ │ └── app.config.ts 
+ │ ├── app.html # Alap HTML sablon 
+ │ ├── app.routes.server.ts # Szerveroldali route-ok 
+ │ ├── app.spec.ts # Tesztek 
+ │ ├── app.ts # Fő alkalmazás logika 
+ │ ├── index.html # Belépési pont 
+ │ ├── main.server.ts # SSR belépési pont 
+ │ ├── main.ts # CSR belépési pont 
+ │ └── styles.css # Globális stílusok 
+ ├── .editorconfig # Editor formázási szabályok 
+ ├── .gitignore # Git kizárási szabályok 
+ ├── angular.json # Angular konfiguráció 
+ ├── package-lock.json # Függőségek verziózása 
+ ├── package.json # Projekt metaadatok és függőségek 
+ ├── README.md # Dokumentáció 
+ ├── tsconfig.app.json # TypeScript beállítások (alkalmazás) ├── tsconfig.json # Globális TypeScript konfiguráció 
+ └── tsconfig.spec.json # TypeScript beállítások (tesztek)
+```

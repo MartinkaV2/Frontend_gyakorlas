@@ -45,3 +45,10 @@ vue-mixin-angular/
  ├── tsconfig.app.json # TypeScript beállítások (alkalmazás) ├── tsconfig.json # Globális TypeScript konfiguráció 
  └── tsconfig.spec.json # TypeScript beállítások (tesztek)
 ```
+
+## 🤔 Milyen csomagokkal müködik a projekt?
+- @Injectable Service: Singleton pattern DI-val
+- BehaviorSubject: Reaktív állapotkezelés RxJS-sel
+- Observable + async pipe: Automatikus unsubscribe
+- OnInit/OnDestroy: Lifecycle hookok
+- Standalone komponensek: Modern Angular 17+

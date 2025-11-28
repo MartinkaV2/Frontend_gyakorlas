@@ -1,0 +1,19 @@
+<div class="counter-card" [class.even]="(isEven$ | async)" [class.odd]="!(isEven$ | async)">
+  <h3>{{ title }}</h3>
+  
+  <div class="count-display">
+    <span class="count-label">Érték:</span>
+    <span class="count-value">{{ count$ | async }}</span>
+  </div>
+  
+  <p class="computed-value">Kétszerese: {{ double$ | async }}</p>
+  <p class="parity">
+    {{ (isEven$ | async) ? '✓ Páros' : '✗ Páratlan' }}
+  </p>
+  
+  <div class="buttons">
+    <button (click)="decrement()" class="btn btn-decrement">-</button>
+    <button (click)="increment()" class="btn btn-increment">+</button>
+    <button (click)="reset()" class="btn btn-reset">Reset</button>
+  </div>
+</div>

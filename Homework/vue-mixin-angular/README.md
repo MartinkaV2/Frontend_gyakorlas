@@ -52,3 +52,6 @@ vue-mixin-angular/
 - Observable + async pipe: Automatikus unsubscribe
 - OnInit/OnDestroy: Lifecycle hookok
 - Standalone komponensek: Modern Angular 17+
+
+## Screenshot a weboldalról
+![Angular Counter Demo Screenshot](./website.png)

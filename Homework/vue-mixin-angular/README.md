@@ -54,4 +54,4 @@ vue-mixin-angular/
 - Standalone komponensek: Modern Angular 17+
 
 ## Screenshot a weboldalról
-![Angular Counter Demo Screenshot](https://ibb.co/mCGStyCT)
+![Angular Counter Demo Screenshot](https://i.ibb.co/mCGStyCT/website.png)

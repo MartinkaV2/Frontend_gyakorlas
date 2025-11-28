@@ -53,5 +53,27 @@ vue-mixin-angular/
 - OnInit/OnDestroy: Lifecycle hookok
 - Standalone komponensek: Modern Angular 17+
 
-## Screenshot a weboldalról
+## 🖥️ Screenshot a weboldalról
 ![Angular Counter Demo Screenshot](https://i.ibb.co/mCGStyCT/website.png)
+
+## ⌨️ Parancsok a projekthez
+
+``` bash
+    ng new vue-mixin-angular
+```
+
+- Amiket választottam:
+Which stylesheet format would you like to use? CSS
+
+Do you want to enable Server-Side Rendering (SSR) and Static Site Generation   
+(SSG/Prerendering)? Yes
+
+Do you want to create a 'zoneless' application without zone.js? No
+
+Which AI tools do you want to configure with Angular best practices? 
+https://angular.dev/ai/develop-with-ai None
+
+De ha kihagytuk volna a zone.js telepítést, akkor tegyük fel
+``` bash
+    npm install zone.js
+```

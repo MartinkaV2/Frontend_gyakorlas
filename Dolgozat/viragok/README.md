@@ -16,6 +16,10 @@ Majd másik terminal-ban ezt írjuk be. Ez fogja biztosítani a képeket.
 ``` bash
 npm run server
 ```
+Javasolt esetleges hibák elkerülése érdekében ezt beírni
+```
+npm audit fix --force
+```
 
 ## Project strukktúrája
 ``` bash

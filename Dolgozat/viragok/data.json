@@ -1,0 +1,74 @@
+{
+  "flowers": [
+    {
+      "id": 1,
+      "name": "Piros rózsa",
+      "price": 4990,
+      "imageUrl": "https://rozsainfo.hu/wp-content/uploads/2020/03/piros_rozsa.jpg",
+      "description": "Klasszikus piros rózsa ajándékozásra."
+    },
+    {
+      "id": 2,
+      "name": "Sárga napraforgó",
+      "price": 3590,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Sunflower_sky_backdrop.jpg",
+      "description": "Vidám napraforgó csokor nyári hangulathoz."
+    },
+    {
+      "id": 3,
+      "name": "Fehér liliom",
+      "price": 4590,
+      "imageUrl": "https://citygreen.hu/wp-content/uploads/2016/07/feh%C3%A9r-liliom.jpg",
+      "description": "Elegáns fehér liliom ünnepi alkalmakra."
+    },
+    {
+      "id": 4,
+      "name": "Rózsaszín tulipán",
+      "price": 3990,
+      "imageUrl": "https://tulipanshop.hu/wp-content/uploads/2024/06/302320.jpg",
+      "description": "Tavaszi rózsaszín tulipán csokor."
+    },
+    {
+      "id": 5,
+      "name": "Kék ibolya",
+      "price": 2990,
+      "imageUrl": "https://amikert.hu/wp-content/uploads/img/kek-ibolya.webp",
+      "description": "Finom illatú ibolya kis csokorban."
+    },
+    {
+      "id": 6,
+      "name": "Rózsaszín hortenzia",
+      "price": 4290,
+      "imageUrl": "https://www.roagarden.hu/image/cache/catalog/product_pictures/9040/hortensia-paniculaa-pink-lady_1-800x800.jpg",
+      "description": "Dús virágzatú hortenzia dekorációhoz."
+    },
+    {
+      "id": 7,
+      "name": "Levendula",
+      "price": 3190,
+      "imageUrl": "https://citygreen.hu/wp-content/uploads/2017/06/levendula-1.jpg",
+      "description": "Illatos levendula csokor természetes hangulathoz."
+    },
+    {
+      "id": 8,
+      "name": "Mezei virágcsokor",
+      "price": 3390,
+      "imageUrl": "https://i.pinimg.com/736x/3d/68/6e/3d686e8c92972eaf1a7aae16d013ae47.jpg",
+      "description": "Színes mezei virágok vegyes csokra."
+    },
+    {
+      "id": 9,
+      "name": "Orchidea",
+      "price": 5990,
+      "imageUrl": "https://citygreen.hu/wp-content/uploads/2023/06/orchidea-1.jpg",
+      "description": "Elegáns orchidea cserepes növény."
+    },
+    {
+      "id": "17f2",
+      "name": "Fekete tulipán",
+      "price": 6900,
+      "imageUrl": "https://cdn.pixabay.com/photo/2019/04/22/18/50/black-tulips-4147324__480.jpg",
+      "description": "A fekete tulipán valójában nagyon sötét bíbor vagy lila árnyalatú, amely fényben feketének tűnik. "
+    }
+  ]
+}

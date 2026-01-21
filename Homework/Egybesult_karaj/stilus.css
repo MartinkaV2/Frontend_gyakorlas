@@ -1,0 +1,109 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #000000; /* 4. pont: Fekete háttér */
+    font-family: Verdana; /* 9. pont: Verdana betűtípus */
+    color: #F4C69A; /* 6. pont: Szövegszín világosbarna */
+}
+
+hr {
+    width: 60%; /* 8. pont: 60% szélesség */
+    margin: 20px auto; /* Középre igazítás */
+    border: 1px solid #F4C69A; /* Opcionális: a vonal láthatósága érdekében */
+}
+
+h1, h2 {
+    color: #F26600; /* 10. pont: Címek sötétnarancs színnel */
+}
+
+
+.tartalom {
+    margin: 0 auto 0 auto;
+    background-color: #503B35; /* 4. és 5. pont: Sötétbarna téglalap */
+    width: 800px; /* 5. pont: 800px széles */
+}
+
+.fejlec {
+    text-align: center; /* Fejléckép középre igazítása, ha szükséges */
+}
+
+.fejlec img {
+    border: none; /* 7. pont: Nincs szegély */
+    display: block; /* Hézagok eltüntetése */
+}
+
+.bal {
+    width: 350px;
+    float: left;
+    padding: 10px; /* 5. pont: 10px belső margó */
+    box-sizing: border-box; /* Hogy a padding ne növelje a szélességet */
+}
+
+.jobb {
+    margin-left: 380px;
+    padding: 10px; /* 5. pont: 10px belső margó */
+}
+
+.lablec {
+    clear: both;
+    text-align: center;
+    padding: 10px; /* 5. pont: 10px belső margó */
+    padding-bottom: 20px;
+}
+
+.lablec ul {
+    list-style-type: disc; /* Vagy 'none', a minta alapján */
+    padding: 0;
+    text-align: center;
+}
+
+.lablec li {
+    list-style: none; /* A minta alapján a láblécben nincs pötty */
+}
+
+.kep {
+    text-align: center; /* 12. pont: Kép középre igazítása az oszlopban */
+    margin-bottom: 20px;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: #F26600; /* 6. pont: Linkek sötétnarancs minden állapotban */
+    text-decoration: underline; /* Vagy none, ízlés szerint */
+}
+
+/* Add hozzá ezeket a stílusokat a meglévő stilus.css fájlhoz */
+
+.kep img {
+    max-width: 300px; /* 12. pont: a kép 300px széles */
+    height: auto;
+    display: block;
+    margin: 10px auto; /* Középre igazítás */
+}
+
+.tartalom {
+    min-height: 100vh; /* Legalább teljes képernyő magasság */
+}
+
+h1 {
+    margin-top: 0; /* A cím ne legyen túl távol a vonaltól */
+    padding-top: 10px;
+}
+
+/* Jobb oldali oszlop formázása */
+.jobb {
+    min-height: 600px; /* Biztosítja, hogy a jobb oszlop elég magas legyen */
+}
+
+/* Felsorolások formázása */
+ul, ol {
+    line-height: 1.6; /* Szöveg sorok közötti tér */
+}
+
+/* Linkek formázása */
+a {
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}

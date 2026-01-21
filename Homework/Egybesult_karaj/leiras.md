@@ -70,7 +70,7 @@ Fejléc kép (fejlec.png):
 - Reszponzív elemek (képek nem lógnak ki a konténerből)
 
 #### Értékelési szempontok
-- A feladat sikeres megoldása a következőket igényli:
+#### A feladat sikeres megoldása a következőket igényli:
 - A grafikus elemek helyes elkészítése
 - A weblap struktúrájának és tartalmának pontos megvalósítása
 - A CSS stílusok helyes alkalmazása
@@ -78,6 +78,6 @@ Fejléc kép (fejlec.png):
 - A feladatban megadott összes követelmény teljesítése
 
 ## források
-- → http://informatika.fazekas.hu/wp-content/uploads/2015/10/e_inf_20okt_fl-4-5.pdf
+- feladat leírás → http://informatika.fazekas.hu/wp-content/uploads/2015/10/e_inf_20okt_fl-4-5.pdf
 - "tűzdelt karaj" → http://www.kulinarisvilag.hu/hun/receptek/tuzdelt-sult-karaj
 - "sertéssült" → http://www.nosalty.hu/receptek/kategoria/husetelek/sertessult

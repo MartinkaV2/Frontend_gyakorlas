@@ -76,3 +76,8 @@ Fejléc kép (fejlec.png):
 - A CSS stílusok helyes alkalmazása
 - A kód tisztasága és szabványossága
 - A feladatban megadott összes követelmény teljesítése
+
+## források
+- → http://informatika.fazekas.hu/wp-content/uploads/2015/10/e_inf_20okt_fl-4-5.pdf
+- "tűzdelt karaj" → http://www.kulinarisvilag.hu/hun/receptek/tuzdelt-sult-karaj
+- "sertéssült" → http://www.nosalty.hu/receptek/kategoria/husetelek/sertessult

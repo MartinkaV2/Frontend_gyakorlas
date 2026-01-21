@@ -55,3 +55,24 @@ Fejléc kép (fejlec.png):
 - "tűzdelt karaj" → http://www.kulinarisvilag.hu/hun/receptek/tuzdelt-sult-karaj
 - "sertéssült" → http://www.nosalty.hu/receptek/kategoria/husetelek/sertessult
 - Linkek színe minden állapotban: sötétnarancs
+
+### Stíluslap (stilus.css)
+#### Betűtípus:
+- Teljes oldal: Verdana
+#### Formázás:
+- Szöveg színe: világosbarna
+- Linkek színe: sötétnarancs
+- Címek színe: sötétnarancs
+#### Technikai követelmények
+- UTF-8 kódolás
+- CSS osztályok használata az elrendezéshez
+- Képek helyes elhelyezése és formázása
+- Reszponzív elemek (képek nem lógnak ki a konténerből)
+
+#### Értékelési szempontok
+- A feladat sikeres megoldása a következőket igényli:
+- A grafikus elemek helyes elkészítése
+- A weblap struktúrájának és tartalmának pontos megvalósítása
+- A CSS stílusok helyes alkalmazása
+- A kód tisztasága és szabványossága
+- A feladatban megadott összes követelmény teljesítése

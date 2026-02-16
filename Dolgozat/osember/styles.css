@@ -1,0 +1,74 @@
+/* Közös stílusok mindkét oldalhoz */
+body {
+    background-color: #FFE4B5; /* moccasin */
+    color: #000080; /* navy */
+    font-family: 'Georgia', serif;
+    margin: 30px;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+/* Képek alapértelmezett kerete */
+img {
+    border: 1px solid #000080;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Linkek */
+a {
+    color: #000080;
+}
+
+/* Olyan elemek, amelyek csak az egyik oldalon jelennek meg, de ide kerülhetnek a szelektorok */
+.center {
+    text-align: center;
+}
+
+.balra {
+    text-align: left;
+}
+
+/* Nean.html specifikus stílusok (nem feltétlenül kell elkülöníteni, de itt is lehet) */
+hr {
+    width: 400px;
+    margin: 0 auto 30px auto;
+    border: 1px solid #000080;
+    background-color: #000080;
+    height: 2px;
+}
+
+table {
+    width: 700px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: none;
+}
+
+td {
+    vertical-align: top;
+    padding: 15px;
+    border: none;
+}
+
+/* A visszanyíl gomb nean.html-ben */
+.balra img {
+    border: none;
+    vertical-align: middle;
+}
+
+/* Kép nagyítása a nean.html bal oldali cellájában */
+.kep-cell {
+    padding: 0;
+}
+.kep-cell img {
+    width: 3500px;
+    height: auto;
+    display: block;  /* kiküszöböli a kép alatti kis helyet */
+    border: none;
+}

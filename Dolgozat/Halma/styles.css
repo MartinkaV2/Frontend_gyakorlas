@@ -1,0 +1,56 @@
+body {
+    background-color: #CD5C5C; /* indianred */
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+table {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #E9967A; /* darksalmon */
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid black;
+    padding: 10px;
+    vertical-align: top;
+}
+
+.image-cell {
+    text-align: center;
+    height: auto;
+    width: 150px;
+}
+
+.bordered-image {
+    border: 1px solid black;
+    max-width: 100%;
+    height: auto;
+}
+
+.rules-cell {
+    /* alapértelmezett stílusok */
+}
+
+.image-center {
+    text-align: center;
+    margin-top: 20px;
+}
+
+ul {
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+a {
+    color: blue;
+    text-decoration: underline;
+}

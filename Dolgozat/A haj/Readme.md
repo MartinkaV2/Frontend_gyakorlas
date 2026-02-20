@@ -18,9 +18,9 @@ A feladatot [itt](http://informatika.fazekas.hu/wp-content/uploads/2015/10/A-haj
 
 7. pont: A cim.png (vagy a pot_cim.png) képet az oldal tetejére kellett elhelyezni, és vízszintesen középre igazítani.
 
-8. pont: A főcímet (<h1>) kellett használni a weblap címének, az alcímeket pedig <h2>-vel megadni, barna betűszínnel. Az alcímeket számozatlan felsorolássá (<ul>) kellett alakítani (a minta szerint minden alcím előtt egy • jel található).
+8. pont: A főcímet (h1) kellett használni a weblap címének, az alcímeket pedig h2-vel megadni, barna betűszínnel. Az alcímeket számozatlan felsorolássá (ul) kellett alakítani (a minta szerint minden alcím előtt egy • jel található).
 
-9. pont: Az első bekezdést (a főcím utáni szöveg) dőlt betűstílussal (<em> vagy font-style: italic), a második bekezdést félkövérrel (<strong> vagy font-weight: bold) kellett formázni.
+9. pont: Az első bekezdést (a főcím utáni szöveg) dőlt betűstílussal (em vagy font-style: italic), a második bekezdést félkövérrel (strong vagy font-weight: bold) kellett formázni.
 
 10. pont: A második alcím („Mikor kezd el nőni a hajunk?”) mellé jobbra igazítva kellett elhelyezni a szerkezet.jpg képet. A képet arányosan 300 képpont szélesre kellett méretezni, 2 pixeles belső margóval bal és jobb oldalon, 1 pixel vastag szegéllyel, és alternatív szövegként „Szőrtüsző” megadásával.
 
